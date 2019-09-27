@@ -8,6 +8,7 @@ body, html {
 	outline: none;
 	user-select: none;
 	min-width: 320px;
+	font-family: sans-serif;
 }
 
 body::-webkit-scrollbar{
@@ -38,7 +39,7 @@ div.profile-container div.header-container {
 
 div.profile-container div.header-container div.banner-container {
 	position: relative;
-	background-image: url(/RV/client/img/nezukoo.png);
+	background-image: url(../img/tyler2.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	min-height: 150px;

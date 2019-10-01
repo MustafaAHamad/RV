@@ -4,10 +4,11 @@
 body, html {
 	padding: 0px;
 	margin: 0px;
-	background: #242333;
+	background: #ffffff;
 	outline: none;
 	user-select: none;
 	min-width: 320px;
+	font-family: sans-serif;
 }
 
 body::-webkit-scrollbar{
@@ -32,47 +33,47 @@ span, p, a {
 /* CHANNEL CONTAINER */
 
 div.profile-container div.header-container {
-	background: #1d1c29;
-	box-shadow: 0px 0px 20px #0d0c13;
+	background: #ffffff;
 }
 
-div.profile-container div.header-container div.banner-container {
+div.profile-container div.header-container div.banner-wrapper {
 	position: relative;
-	background-image: url(/RV/client/img/nezukoo.png);
+	background-image: url(../img/tyler.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	min-height: 150px;
 }
 
-div.profile-container div.header-container div.banner-container:before {
+/*div.profile-container div.header-container div.banner-container:before {
 	position: absolute;
 	content: "";
 	width: 100%;
 	height: 100%;
-	background: -webkit-linear-gradient(bottom, rgb(29, 28, 41) 0%, rgba(255, 255, 255, 0) 25%);
+	background: -webkit-linear-gradient(bottom, rgb(29, 28, 41) 0%, rgba(255, 255, 255, 0) 25%); 
 	background: linear-gradient(to top, rgb(29, 28, 41) 0%, rgba(255, 255, 255, 0) 25%);
+}*/
+
+div.profile-container div.channel-wrapper {
+	padding: 15px 1rem;
+	display: inline-block;
 }
 
-div.profile-container div.header-container div.avatar-wrapper {
-	position: absolute;
-	bottom: -46px;
-	left: 15px;
+div.profile-container div.channel-wrapper div {
+	float: left;
 }
 
 div.profile-container div.header-container div.avatar-wrapper img {
-	width: 84px;
-	height: 84px;
+	width: 74px;
+	height: 74px;
 	border-radius: 50%;
-	border: 2px solid #1b1a26;
 	background: #1d1c29;
 }
 
-div.profile-container div.information-container {
-	padding: 15px;
-	padding-top: 46px;
+div.profile-container div.channel-wrapper div.information-container {
+	padding: 0.5rem 1rem;
 }
 
-div.profile-container div.information-container span {
+div.profile-container div.channel-wrapper div.information-container span {
 	margin: 0px;
 	font-size: 1rem;
 	font-weight: bold;
@@ -81,16 +82,16 @@ div.profile-container div.information-container span {
 	display: block;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	color: #f9f9fa;
+	color: #262626;
 }
 
-div.profile-container div.information-container span.username {
-	font-size: 0.8rem;
-	color: #b0aebb;
-	margin-bottom: 5px;
+div.profile-container div.channel-wrapper div.information-container span.subcount {
+	font-size: 0.85rem;
+	color: #525252;
+	margin: 2px 0px;
 }
 
-div.profile-container div.information-container p {
+div.profile-container div.channel-wrapper div.information-container p {
 	display: block;
 	text-align: left;
 	color: #f9f9fa;
@@ -160,7 +161,6 @@ div.profile-container div.feed-container {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	padding-top: 10px;
 }
 
 div.profile-container div.feed-container div.post-container {
@@ -170,7 +170,7 @@ div.profile-container div.feed-container div.post-container {
 }
 
 div.profile-container div.feed-container div.post-container div.content-container {
-	margin-left: 56px;
+	margin-left: 60px;
 	min-height: 56px;
 }
 
@@ -179,10 +179,10 @@ div.profile-container div.feed-container div.post-container div.content-containe
 	margin-bottom: 2px;
 }
 
-.profile-container .feed-container .post-container .content-container .post-header .user-information .avatar {
+div.profile-container div.feed-container div.post-container div.content-container div.post-header a.user-information img.avatar {
 	float: left;
 	margin-top: 3px;
-	margin-left: -58px;
+	margin-left: -60px;
 	position: absolute;
 }
 
@@ -190,17 +190,18 @@ div.profile-container div.feed-container div.post-container div.content-containe
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
+	background: #1d1c29;
 }
 
 div.profile-container div.feed-container div.post-container div.content-container div.post-header a.user-information span.time {
 	font-size: 14px;
-	color: #b0aebb;
+	color: #6b6b6b;
 	font-weight: normal;
 }
 
 div.profile-container div.feed-container div.post-container div.content-container div.post-header a.user-information span.time:before {
 	content: "";
-	background: #b0aebb;
+	background: #6b6b6b;
 	margin: 3px 0px;
 	margin-right: 5px;
 	margin-left: 2px;
@@ -219,7 +220,7 @@ div.profile-container div.feed-container div.post-container div.content-containe
 	line-height: 17px;
 	white-space: pre-wrap;
 	word-wrap: break-word;
-	color: #f9f9fa;
+	color: #333333;
 }
 
 div.profile-container div.feed-container div.post-container div.content-container div.post-context div.media-wrapper {
@@ -236,7 +237,7 @@ div.profile-container div.feed-container div.post-container div.content-containe
 }
 
 div.profile-container div.feed-container div.post-container div.content-container div.post-actions i {
-	color: #b0aebb;
+	color: #adadad;
 	font-size: 15px;
 	padding: 5px;
 }
@@ -269,7 +270,7 @@ div.profile-container div.feed-container div.post-container a div img {
 
 .fullname {
 	word-break: break-all;
-	color: #f9f9fa;
+	color: #333333;
 	font-size: 14px;
 	font-weight: bold;
 }

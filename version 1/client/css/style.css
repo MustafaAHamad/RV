@@ -22,6 +22,12 @@ span, p, a {
 	word-wrap: break-word;
 }
 
+/* HIDDEN */
+
+.hidden {
+	display: none;
+}
+
 /* PROFILE PAGE */
 
 div.profile-container div.header-container {
@@ -29,21 +35,21 @@ div.profile-container div.header-container {
 }
 
 div.profile-container div.header-container div.banner-container {
-	position: relative;
 	background-image: url(../img/nezukoo.png);
+	position: relative;
 	background-repeat: no-repeat;
 	background-size: cover;
 	min-height: 170px;
 }
 
-div.profile-container div.header-container div.banner-container:before {
+/*div.profile-container div.header-container div.banner-container:before {
 	position: absolute;
 	content: "";
 	width: 100%;
 	height: 100%;
-	background: -webkit-linear-gradient(bottom, rgb(29, 28, 41) 0%, rgba(255, 255, 255, 0) 25%);
+	 background: -webkit-linear-gradient(bottom, rgb(29, 28, 41) 0%, rgba(255, 255, 255, 0) 25%); 
 	background: linear-gradient(to top, rgb(29, 28, 41) 0%, rgba(255, 255, 255, 0) 25%);
-}
+}*/
 
 div.profile-container div.header-container div.avatar-wrapper {
 	position: absolute;
@@ -59,10 +65,12 @@ div.profile-container div.header-container div.avatar-wrapper img {
 	background: #242333;
 }
 
-div.profile-container div.header-container div.profile-wrapper div.information-container {
-	padding: 15px;
+div.profile-container div.header-container div.profile-wrapper {
 	padding-top: 46px;
-	padding-bottom: 0px;
+}
+
+div.profile-container div.header-container div.profile-wrapper div.information-container {
+	padding: 0px 30px 5px;
 }
 
 div.profile-container div.header-container div.profile-wrapper div.information-container span {
@@ -81,7 +89,7 @@ div.profile-container div.header-container div.profile-wrapper div.information-c
 div.profile-container div.header-container div.profile-wrapper div.information-container span.username {
 	font-size: 0.8rem;
 	color: #b0aebb;
-	margin-bottom: 5px;
+	font-weight: 200;
 }
 
 div.profile-container div.header-container div.profile-wrapper div.information-container span.bio {
@@ -103,6 +111,32 @@ div.profile-container div.information-container p {
 	padding: 0.5rem 2rem;
 }
 
+div.profile-container div.option-wrapper {
+	text-align: right;
+}
+
+div.profile-container div.option-wrapper a {
+	margin: 0px 10px;
+}
+
+div.profile-container div.option-wrapper a span {
+	padding: 5px 10px;
+	background: #ffffff;
+	color: #1d1c29;
+	border-radius: 5px;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+/*div.profile-container div.option-wrapper a {
+	padding: 10px;
+}
+
+div.profile-wrapper div.option-wrapper a i {
+	font-size: 19px;
+	color: #ffffff;
+}*/
+
 div.profile-container ul.statistic-container {
 	-webkit-justify-content: space-around;
 	-ms-flex-pack: distribute;
@@ -114,7 +148,7 @@ div.profile-container ul.statistic-container {
 	display: flex;
 	margin: 0px auto;
 	margin-bottom: 0pc;
-	padding: 5px 0px 15px;
+	padding: 2px 0px 15px;
 }
 
 div.profile-container ul.statistic-container li.statistic {
@@ -127,7 +161,7 @@ div.profile-container ul.statistic-container li.statistic {
 
 div.profile-container ul.statistic-container li a {
 	display: block;
-	font-size: 11px;
+	font-size: 11.5px;
 	font-weight: 200;
 	color: #ffffff;
 	font-family: sans-serif;
@@ -167,53 +201,53 @@ div.profile-container div.navigation-wrapper a {
 	text-align: center;
 }
 
-div.profile-container div.feed-container {
+div.feed-container {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	padding-top: 10px;
 	margin: 0px 5px;
-	background: #242333;
 	border-radius: 25px;
 	margin-bottom: 20px;
+	background: #242333;
 }
 
-div.profile-container div.feed-container div.post-container {
+div.feed-container div.post-container {
 	padding: 10px;
 	width: 100%;
 }
 
-div.profile-container div.feed-container div.post-container div.content-container {
+div.feed-container div.post-container div.content-container {
 	margin-left: 58px;
 	min-height: 58px;
 }
 
-div.profile-container div.feed-container div.post-container div.content-container div.post-header {
+div.feed-container div.post-container div.content-container div.post-header {
 	display: flex;
 	margin-bottom: 2px;
 }
 
-.profile-container .feed-container .post-container .content-container .post-header .user-information .avatar {
+div.feed-container div.post-container div.content-container div.post-header a.user-information img.avatar {
 	float: left;
 	margin-top: 3px;
 	margin-left: -58px;
 	position: absolute;
 }
 
-div.profile-container div.feed-container div.post-container div.content-container div.post-header a.user-information img.avatar {
+div.feed-container div.post-container div.content-container div.post-header a.user-information img.avatar {
 	width: 46px;
 	height: 46px;
 	border-radius: 50%;
 	border: 2px solid #1d1c29;
 }
 
-div.profile-container div.feed-container div.post-container div.content-container div.post-header a.user-information span.time {
+div.feed-container div.post-container div.content-container div.post-header a.user-information span.time {
 	font-size: 14px;
 	color: #b0aebb;
 	font-weight: normal;
 }
 
-div.profile-container div.feed-container div.post-container div.content-container div.post-header a.user-information span.time:before {
+div.feed-container div.post-container div.content-container div.post-header a.user-information span.time:before {
 	content: "";
 	background: #b0aebb;
 	margin: 3px 0px;
@@ -225,11 +259,11 @@ div.profile-container div.feed-container div.post-container div.content-containe
 	border-radius: 50%;
 }
 
-div.profile-container div.feed-container div.post-container div.content-container div.post-context {
+div.feed-container div.post-container div.content-container div.post-context {
 	margin-bottom: 2px;
 }
 
-div.profile-container div.feed-container div.post-container div.content-container div.post-context p {
+div.feed-container div.post-container div.content-container div.post-context p {
 	font-size: 13.5px;
 	line-height: 17px;
 	white-space: pre-wrap;
@@ -237,47 +271,47 @@ div.profile-container div.feed-container div.post-container div.content-containe
 	color: #f9f9fa;
 }
 
-div.profile-container div.feed-container div.post-container div.content-container div.post-context div.media-wrapper {
+div.feed-container div.post-container div.content-container div.post-context div.media-wrapper {
 	margin-top: 5px;
 	max-width: 506px;
 	max-height: 506px;
 }
 
-div.profile-container div.feed-container div.post-container div.content-container div.post-context div.media-wrapper img {
+div.feed-container div.post-container div.content-container div.post-context div.media-wrapper img {
 	width: 100%;
 	height: 100%;
 	border-radius: 10px;
 	background: #1d1c29;
 }
 
-div.profile-container div.feed-container div.post-container div.content-container div.post-actions i {
+div.feed-container div.post-container div.content-container div.post-actions i {
 	color: #b0aebb;
 	font-size: 15px;
 	padding: 5px;
 }
 
-div.profile-container div.feed-container div.post-container div.content-container div.post-actions i.comment-active {
+div.feed-container div.post-container div.content-container div.post-actions i.comment-active {
 	color: #43c5ff;
 }
 
-div.profile-container div.feed-container div.post-container div.content-container div.post-actions i.like-active {
+div.feed-container div.post-container div.content-container div.post-actions i.like-active {
 	color: #c53636;
 }
 
-div.profile-container div.feed-container div.post-container div.content-container div.post-actions i.retweet-active {
+div.feed-container div.post-container div.content-container div.post-actions i.retweet-active {
 	color: #5acc5e;
 }
 
-div.profile-container div.feed-container div.post-container div.top-container span {
+div.feed-container div.post-container div.top-container span {
 	float: left;
 }
 
-div.profile-container div.feed-container div.post-container div.top-container div.picture-container img {
+div.feed-container div.post-container div.top-container div.picture-container img {
 	width: 40px;
 	border-radius: 50%;
 }
 
-div.profile-container div.feed-container div.post-container a div img {
+div.feed-container div.post-container a div img {
 	width: 100%;
 	height: 100%;
 }

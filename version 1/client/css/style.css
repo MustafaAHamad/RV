@@ -4,7 +4,7 @@
 body, html {
 	padding: 0px;
 	margin: 0px;
-	background: #1d1c29;
+	background: #242333;
 	outline: none;
 	user-select: none;
 	min-width: 350px;
@@ -105,7 +105,7 @@ div.profile-container div.information-container p {
 	display: block;
 	text-align: center;
 	color: #f9f9fa;
-	font-size: 13px;
+	font-size: 0.8rem;
 	font-weight: normal;
 	line-height: 18px;
 	padding: 0.5rem 2rem;
@@ -161,7 +161,7 @@ div.profile-container ul.statistic-container li.statistic {
 
 div.profile-container ul.statistic-container li a {
 	display: block;
-	font-size: 11.5px;
+	font-size: 0.7rem;
 	font-weight: 200;
 	color: #ffffff;
 	font-family: sans-serif;
@@ -169,7 +169,7 @@ div.profile-container ul.statistic-container li a {
 
 div.profile-container ul.statistic-container li a span {
 	display: block;
-	font-size: 15px;
+	font-size: 0.925rem;
 	font-weight: 600;
 	color: #ffffff;
 	font-family: sans-serif;
@@ -205,11 +205,7 @@ div.feed-container {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	padding-top: 10px;
-	margin: 0px 5px;
-	border-radius: 25px;
-	margin-bottom: 20px;
-	background: #242333;
+	margin: 10px 0px 0px;
 }
 
 div.feed-container div.post-container {
@@ -218,8 +214,8 @@ div.feed-container div.post-container {
 }
 
 div.feed-container div.post-container div.content-container {
-	margin-left: 58px;
-	min-height: 58px;
+	margin-left: 55px;
+	min-height: 55px;
 }
 
 div.feed-container div.post-container div.content-container div.post-header {
@@ -230,7 +226,7 @@ div.feed-container div.post-container div.content-container div.post-header {
 div.feed-container div.post-container div.content-container div.post-header a.user-information img.avatar {
 	float: left;
 	margin-top: 3px;
-	margin-left: -58px;
+	margin-left: -52px;
 	position: absolute;
 }
 
@@ -238,11 +234,10 @@ div.feed-container div.post-container div.content-container div.post-header a.us
 	width: 46px;
 	height: 46px;
 	border-radius: 50%;
-	border: 2px solid #1d1c29;
 }
 
 div.feed-container div.post-container div.content-container div.post-header a.user-information span.time {
-	font-size: 14px;
+	font-size: 0.785rem;
 	color: #b0aebb;
 	font-weight: normal;
 }
@@ -264,7 +259,7 @@ div.feed-container div.post-container div.content-container div.post-context {
 }
 
 div.feed-container div.post-container div.content-container div.post-context p {
-	font-size: 13.5px;
+	font-size: 0.875rem;
 	line-height: 17px;
 	white-space: pre-wrap;
 	word-wrap: break-word;
@@ -286,7 +281,7 @@ div.feed-container div.post-container div.content-container div.post-context div
 
 div.feed-container div.post-container div.content-container div.post-actions i {
 	color: #b0aebb;
-	font-size: 15px;
+	font-size: 0.95rem;
 	padding: 5px;
 }
 
@@ -319,7 +314,7 @@ div.feed-container div.post-container a div img {
 .fullname {
 	word-break: break-all;
 	color: #f9f9fa;
-	font-size: 14px;
+	font-size: 0.875rem;
 	font-weight: bold;
 }
 

@@ -4,10 +4,11 @@
 body, html {
 	padding: 0px;
 	margin: 0px;
-	background: #242333;
+	background: #1d1c29;
 	outline: none;
 	user-select: none;
-	min-width: 350px;
+	min-width: 20rem;
+	font-family: sans-serif;
 }
 
 body::-webkit-scrollbar{
@@ -28,6 +29,10 @@ span, p, a {
 	display: none;
 }
 
+/* HOME PAGE */
+
+
+
 /* PROFILE PAGE */
 
 div.profile-container div.header-container {
@@ -39,38 +44,37 @@ div.profile-container div.header-container div.banner-container {
 	position: relative;
 	background-repeat: no-repeat;
 	background-size: cover;
-	min-height: 170px;
+	min-height: 150px;
 }
 
-/*div.profile-container div.header-container div.banner-container:before {
+div.profile-container div.header-container div.banner-container:before {
 	position: absolute;
 	content: "";
 	width: 100%;
 	height: 100%;
-	 background: -webkit-linear-gradient(bottom, rgb(29, 28, 41) 0%, rgba(255, 255, 255, 0) 25%); 
-	background: linear-gradient(to top, rgb(29, 28, 41) 0%, rgba(255, 255, 255, 0) 25%);
-}*/
+	/* background: -webkit-linear-gradient(bottom, rgb(29, 28, 41) 0%, rgba(255, 255, 255, 0) 25%); */
+	/* background: linear-gradient(to top, rgb(29, 28, 41) 0%, rgba(255, 255, 255, 0) 25%); */
+}
 
 div.profile-container div.header-container div.avatar-wrapper {
 	position: absolute;
-	bottom: calc(0% - 46px);
-	left: calc(50% - 46px);
+	bottom: calc(0% - 51px);
+	left: calc(50% - 51px);
 }
 
 div.profile-container div.header-container div.avatar-wrapper img {
-	width: 84px;
-	height: 84px;
+	width: 86px;
+	height: 86px;
 	border-radius: 50%;
 	border: 5px solid #1d1c29;
 	background: #242333;
 }
 
 div.profile-container div.header-container div.profile-wrapper {
-	padding-top: 46px;
 }
 
 div.profile-container div.header-container div.profile-wrapper div.information-container {
-	padding: 0px 30px 5px;
+	padding: 51px 30px 5px;
 }
 
 div.profile-container div.header-container div.profile-wrapper div.information-container span {
@@ -90,6 +94,7 @@ div.profile-container div.header-container div.profile-wrapper div.information-c
 	font-size: 0.8rem;
 	color: #b0aebb;
 	font-weight: 200;
+	margin-bottom: 5px;
 }
 
 div.profile-container div.header-container div.profile-wrapper div.information-container span.bio {

@@ -1,10 +1,17 @@
 
+/* VARIABLES */
+
+body {
+	--darktheme-light: #242333;
+	--darktheme-dark: #1d1c29;
+}
+
 /* ROOT */
 
 body, html {
 	padding: 0px;
 	margin: 0px;
-	background: #242333;
+	background: var(--darktheme-light);
 	outline: none;
 	user-select: none;
 	min-width: 20rem;
@@ -43,7 +50,7 @@ span, p, a {
 /* PROFILE PAGE */
 
 div.profile-container div.header-container {
-	background: #1d1c29;
+	background: var(--darktheme-dark);
 	/* border-bottom: 1px solid #2c2b3e; */
 }
 
@@ -74,8 +81,8 @@ div.profile-container div.header-container div.avatar-wrapper img {
 	width: 5.35rem;
 	height: 5.35rem;
 	border-radius: 50%;
-	border: 5px solid #1d1c29;
-	background: #242333;
+	border: 5px solid var(--darktheme-dark);
+	background: var(--darktheme-light);
 }
 
 div.profile-container div.header-container div.profile-wrapper {
@@ -135,7 +142,7 @@ div.profile-container div.option-wrapper a {
 div.profile-container div.option-wrapper a span {
 	padding: 5px 10px;
 	background: #ffffff;
-	color: #1d1c29;
+	color: var(--darktheme-dark);
 	border-radius: 5px;
 	font-size: 14px;
 	font-weight: 600;
@@ -247,7 +254,7 @@ div.feed-container div.post-container div.content-container div.post-header a.us
 	width: 2.95rem;
 	height: 2.95rem;
 	border-radius: 50%;
-	border: .15rem solid #1d1c29;
+	border: .15rem solid var(--darktheme-dark);
 }
 
 div.feed-container div.post-container div.content-container div.post-header a.user-information span.time {
@@ -290,7 +297,7 @@ div.feed-container div.post-container div.content-container div.post-context div
 	width: 100%;
 	height: 100%;
 	border-radius: 10px;
-	background: #1d1c29;
+	background: var(--darktheme-dark);
 }
 
 div.feed-container div.post-container div.content-container div.post-actions i {

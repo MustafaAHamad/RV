@@ -4,7 +4,7 @@
 body, html {
 	padding: 0px;
 	margin: 0px;
-	background: #1d1c29;
+	background: #242333;
 	outline: none;
 	user-select: none;
 	min-width: 20rem;
@@ -21,6 +21,7 @@ span, p, a {
 	border: 0px;
 	font: inherit;
 	word-wrap: break-word;
+	text-decoration: none;
 }
 
 /* HIDDEN */
@@ -29,14 +30,21 @@ span, p, a {
 	display: none;
 }
 
-/* HOME PAGE */
+/* INDEX PAGE */
 
+#jASE9ghv.form-container {
+	background: red;
+	padding: 10000px;
+}
+
+/* HOME PAGE */
 
 
 /* PROFILE PAGE */
 
 div.profile-container div.header-container {
 	background: #1d1c29;
+	/* border-bottom: 1px solid #2c2b3e; */
 }
 
 div.profile-container div.header-container div.banner-container {
@@ -58,13 +66,13 @@ div.profile-container div.header-container div.banner-container:before {
 
 div.profile-container div.header-container div.avatar-wrapper {
 	position: absolute;
-	bottom: calc(0% - 51px);
-	left: calc(50% - 51px);
+	bottom: calc(0% - 3.25rem);
+	margin-left: 20px;
 }
 
 div.profile-container div.header-container div.avatar-wrapper img {
-	width: 86px;
-	height: 86px;
+	width: 5.35rem;
+	height: 5.35rem;
 	border-radius: 50%;
 	border: 5px solid #1d1c29;
 	background: #242333;
@@ -87,7 +95,7 @@ div.profile-container div.header-container div.profile-wrapper div.information-c
 	overflow: hidden;
 	text-overflow: ellipsis;
 	color: #f9f9fa;
-	text-align: center;
+	text-align: left;
 }
 
 div.profile-container div.header-container div.profile-wrapper div.information-container span.username {
@@ -108,12 +116,12 @@ div.profile-container div.header-container div.profile-wrapper div.information-c
 
 div.profile-container div.information-container p {
 	display: block;
-	text-align: center;
+	text-align: left;
 	color: #f9f9fa;
 	font-size: 0.8rem;
 	font-weight: normal;
 	line-height: 18px;
-	padding: 0.5rem 2rem;
+	/* padding: 0.5rem 2rem; */
 }
 
 div.profile-container div.option-wrapper {
@@ -210,7 +218,7 @@ div.feed-container {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	margin: 10px 0px 0px;
+	margin: 10px 0px;
 }
 
 div.feed-container div.post-container {
@@ -219,7 +227,7 @@ div.feed-container div.post-container {
 }
 
 div.feed-container div.post-container div.content-container {
-	margin-left: 55px;
+	margin-left: 3.5rem;
 	min-height: 55px;
 }
 
@@ -231,14 +239,15 @@ div.feed-container div.post-container div.content-container div.post-header {
 div.feed-container div.post-container div.content-container div.post-header a.user-information img.avatar {
 	float: left;
 	margin-top: 3px;
-	margin-left: -52px;
+	margin-left: -3.5rem;
 	position: absolute;
 }
 
 div.feed-container div.post-container div.content-container div.post-header a.user-information img.avatar {
-	width: 46px;
-	height: 46px;
+	width: 2.95rem;
+	height: 2.95rem;
 	border-radius: 50%;
+	border: .15rem solid #1d1c29;
 }
 
 div.feed-container div.post-container div.content-container div.post-header a.user-information span.time {

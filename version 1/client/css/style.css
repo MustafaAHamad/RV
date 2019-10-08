@@ -2,6 +2,7 @@
 /* VARIABLES */
 
 body {
+	--white: #ffffff;
 	--darktheme-light: #242333;
 	--darktheme-dark: #1d1c29;
 }
@@ -39,6 +40,18 @@ span, p, a {
 
 /* INDEX PAGE */
 
+div.jASE9ghv div.form-aeKrV4cx {
+	background: var(--darktheme-dark);
+	padding: 25px;
+}
+
+div.jASE9ghv div.form-aeKrV4cx form div {
+	margin: 0px 0px 10px;
+}
+
+div.jASE9ghv div.form-aeKrV4cx form div input {
+	
+}
 
 /* HOME PAGE */
 

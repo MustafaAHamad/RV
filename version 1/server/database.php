@@ -1,8 +1,9 @@
 <?php
+
 	error_reporting(E_ALL);
 	ini_set("display_errors", 1);
 
-	// CONNECT DATABASE
+	// DATABASE
 	global $db, $debugMode;
 
 	$debugMode = true;
@@ -17,7 +18,7 @@
 	$user = false;
 	if(isset($_SESSION['user'])) $user = $_SESSION['user'];
 
-	// API REQUEST
+	// API
 	include('api.php');
 
 	/////////////////////////////////////////////////////////////////////////////

@@ -22,12 +22,10 @@
 			if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
 				header("Location: ../resetpassword.html?update=failed%invalid%email&'$email'");
 				exit();
-			}
 		}else{
 			if(!$resultCheck){
 	        	header("Location: ../resetpassword.html?update=failed%invalid&information");
 				exit();
-			}
 		}else{
 			// HASH THE PASSWORD
 			$hashedpwd = md5($pwd);

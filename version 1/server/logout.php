@@ -1,6 +1,6 @@
 <?php
 
-	if(isset($_POST['logout'])) {
+	if(isset($_POST['logout'])){
 
 		// DATABASE
 		include('database.php');

@@ -2,9 +2,10 @@
 /* VARIABLES */
 
 body {
-	--white: #ffffff;
+	--lighttheme-light: #ffffff;
 	--darktheme-light: #242333;
 	--darktheme-dark: #1d1c29;
+	--white: #ffffff;
 }
 
 /* ROOT */
@@ -12,7 +13,7 @@ body {
 body, html {
 	padding: 0px;
 	margin: 0px;
-	background: var(--darktheme-light);
+	background: var(--lighttheme-light);
 	outline: none;
 	user-select: none;
 	min-width: 20rem;
@@ -40,17 +41,43 @@ span, p, a {
 
 /* INDEX PAGE */
 
-div.jASE9ghv div.form-aeKrV4cx {
-	background: var(--darktheme-dark);
-	padding: 25px;
+div.jASE9ghv div.aeKrV4cx {
+	margin: 0px 1.5rem;
 }
 
-div.jASE9ghv div.form-aeKrV4cx form div {
+div.jASE9ghv div.aeKrV4cx form div {
 	margin: 0px 0px 10px;
 }
 
-div.jASE9ghv div.form-aeKrV4cx form div input {
-	
+div.jASE9ghv div.aeKrV4cx form div input {
+	width: -webkit-fill-available;
+	background: none;
+	border: none;
+	border-bottom: 1px solid #f3f3f3;
+	padding: 10px 0px;
+	outline: none;
+	color: #484848;
+	font-size: 0.95rem;
+	font-weight: bold;
+}
+
+div.jASE9ghv div.aeKrV4cx form div span {
+	display: block;
+	font-weight: bold;
+	font-size: 0.75rem;
+	color: #b9b9b9;
+	text-rendering: optimizeLegibility;
+}
+
+div.jASE9ghv div.aeKrV4cx form button.vRxkJCc3 {
+	padding: 10px 30px;
+	background-image: linear-gradient(to right, #00ff72, #00ffc9);
+	border: none;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 1rem;
+	letter-spacing: 0.1rem;
+	border-radius: 50px;
 }
 
 /* HOME PAGE */

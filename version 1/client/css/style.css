@@ -39,37 +39,63 @@ span, p, a {
 	display: none;
 }
 
-/* INDEX PAGE */
+/* LOGIN OR SIGNUP PAGE */
+
+div.xKrjG39sL {
+	width: 100%;
+	display: inline-block;
+	background: #ffffff;
+	border-bottom: 1px solid #ebebeb;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 3;
+}
+
+div.xKrjG39sL button{
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #00ff85;
+    padding: 10px;
+    outline: none;
+    margin: 5px 10px;
+}
 
 div.jASE9ghv div.aeKrV4cx {
-	margin: 0px 1.5rem;
+	padding: 80px 1.5rem 0px;
 }
 
-div.jASE9ghv div.aeKrV4cx form div {
-	margin: 0px 0px 10px;
+div.jASE9ghv div.aeKrV4cx form div.vkR43oAc {
+	margin: 0px 0px 15px;
 }
 
-div.jASE9ghv div.aeKrV4cx form div input {
+div.jASE9ghv div.aeKrV4cx form div.vkR43oAc span {
+	display: block;
+	font-weight: bold;
+	font-size: 0.75rem;
+	color: #b9b9b9;
+	text-rendering: optimizeLegibility;
+	margin-bottom: 2px;
+	letter-spacing: 0.1rem;
+}
+
+div.jASE9ghv div.aeKrV4cx form div.vkR43oAc input {
 	width: -webkit-fill-available;
 	background: none;
-	border: none;
-	border-bottom: 1px solid #f3f3f3;
-	padding: 10px 0px;
+	border: 1px solid #ebebeb;
+	padding: 10px 10px;
 	outline: none;
 	color: #484848;
 	font-size: 0.95rem;
 	font-weight: bold;
 }
 
-div.jASE9ghv div.aeKrV4cx form div span {
-	display: block;
-	font-weight: bold;
-	font-size: 0.75rem;
-	color: #b9b9b9;
-	text-rendering: optimizeLegibility;
+div.jASE9ghv div.aeKrV4cx form div.Kc8jGzbR {
+	text-align: center;
 }
 
-div.jASE9ghv div.aeKrV4cx form button.vRxkJCc3 {
+div.jASE9ghv div.aeKrV4cx form div.Kc8jGzbR button.vRxkJCc3 {
 	padding: 10px 30px;
 	background-image: linear-gradient(to right, #00ff72, #00ffc9);
 	border: none;
@@ -78,6 +104,30 @@ div.jASE9ghv div.aeKrV4cx form button.vRxkJCc3 {
 	font-size: 1rem;
 	letter-spacing: 0.1rem;
 	border-radius: 50px;
+}
+
+div.jASE9ghv div.aeKrV4cx form div.Kc8jGzbR button.cKr4hVqkS {
+	display: block;
+	font-weight: bold;
+	font-size: 0.75rem;
+	color: #b9b9b9;
+	text-rendering: optimizeLegibility;
+	border: none;
+	background: none;
+	outline: none;
+}
+
+div.jASE9ghv div.aeKrV4cx form b.jgHkrEl2 {
+	display: block;
+	font-size: 0.718rem;
+	text-align: center;
+	color: #737373;
+	margin: 15px 0px;
+}
+
+div.jASE9ghv div.aeKrV4cx form b.jgHkrEl2 a {
+	color: #5abbff;
+	text-decoration: none;
 }
 
 /* HOME PAGE */

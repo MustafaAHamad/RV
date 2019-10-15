@@ -45,7 +45,6 @@ div.xKrjG39sL {
 	width: 100%;
 	display: inline-block;
 	background: #ffffff;
-	border-bottom: 1px solid #ebebeb;
 	position: fixed;
 	top: 0px;
 	left: 0px;
@@ -62,28 +61,29 @@ div.xKrjG39sL button{
     margin: 5px 10px;
 }
 
-div.jASE9ghv div.aeKrV4cx {
+div.jASE9ghv {
 	padding: 80px 1.5rem 0px;
 }
 
-div.jASE9ghv div.aeKrV4cx form div.vkR43oAc {
+div.jASE9ghv div form div.vkR43oAc {
 	margin: 0px 0px 15px;
 }
 
-div.jASE9ghv div.aeKrV4cx form div.vkR43oAc span {
+div.jASE9ghv div form div.vkR43oAc span {
 	display: block;
 	font-weight: bold;
 	font-size: 0.75rem;
-	color: #b9b9b9;
+	color: #9c9c9c;
 	text-rendering: optimizeLegibility;
 	margin-bottom: 2px;
 	letter-spacing: 0.1rem;
 }
 
-div.jASE9ghv div.aeKrV4cx form div.vkR43oAc input {
+div.jASE9ghv div form div.vkR43oAc input {
 	width: -webkit-fill-available;
 	background: none;
-	border: 1px solid #ebebeb;
+	border: none;
+	border-bottom: 1px solid #ebebeb;
 	padding: 10px 10px;
 	outline: none;
 	color: #484848;
@@ -91,11 +91,11 @@ div.jASE9ghv div.aeKrV4cx form div.vkR43oAc input {
 	font-weight: bold;
 }
 
-div.jASE9ghv div.aeKrV4cx form div.Kc8jGzbR {
+div.jASE9ghv div form div.Kc8jGzbR {
 	text-align: center;
 }
 
-div.jASE9ghv div.aeKrV4cx form div.Kc8jGzbR button.vRxkJCc3 {
+div.jASE9ghv div form div.Kc8jGzbR button.vRxkJCc3 {
 	padding: 10px 30px;
 	background-image: linear-gradient(to right, #00ff72, #00ffc9);
 	border: none;
@@ -106,7 +106,7 @@ div.jASE9ghv div.aeKrV4cx form div.Kc8jGzbR button.vRxkJCc3 {
 	border-radius: 50px;
 }
 
-div.jASE9ghv div.aeKrV4cx form div.Kc8jGzbR button.cKr4hVqkS {
+div.jASE9ghv div form div.Kc8jGzbR button.cKr4hVqkS {
 	display: block;
 	font-weight: bold;
 	font-size: 0.75rem;
@@ -117,7 +117,7 @@ div.jASE9ghv div.aeKrV4cx form div.Kc8jGzbR button.cKr4hVqkS {
 	outline: none;
 }
 
-div.jASE9ghv div.aeKrV4cx form b.jgHkrEl2 {
+div.jASE9ghv div form b.jgHkrEl2 {
 	display: block;
 	font-size: 0.718rem;
 	text-align: center;
@@ -125,7 +125,7 @@ div.jASE9ghv div.aeKrV4cx form b.jgHkrEl2 {
 	margin: 15px 0px;
 }
 
-div.jASE9ghv div.aeKrV4cx form b.jgHkrEl2 a {
+div.jASE9ghv div form b.jgHkrEl2 a {
 	color: #5abbff;
 	text-decoration: none;
 }

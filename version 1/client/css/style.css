@@ -174,7 +174,7 @@ div.jGh4C3iW div.irJk78cf div.avatar-wrapper img {
 	width: 6.75rem;
 	height: 6.75rem;
 	border-radius: 50%;
-	/* border: 5px solid var(--darktheme-light); */
+	border: 5px solid var(--darktheme-light);
 	background: var(--darktheme-light);
 }
 

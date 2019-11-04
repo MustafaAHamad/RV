@@ -11,4 +11,3 @@ var signupForum = document.getElementById('aKjCvK0e');
 function print(){
 	console.log('hi');
 }
-

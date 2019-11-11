@@ -18,7 +18,7 @@
 				<div class="cPbM42jGh">
 					<div class="ghR3kjMt">
 						<a class="yUtEc46bQ">
-							<img alt="" src="client/img/whodis.png" />
+							<img src="client/img/whodis.png" alt>
 							<span class="vBnr39CkriP">Kamado Tanjirō</span>
 							<span class="vBnr39CkriP vkFrj48Cxy">6m</span>
 						</a>
@@ -26,7 +26,7 @@
 					<div class="NdtU7Bpa">
 						<p>SKRRRT BrRRT sKRt SKKRT</p>
 						<div class="GTrjcR941">
-							<img class="vkrhjEi8p" src="client/img/banner.jpg">
+							<img class="vkrhjEi8p" src="client/img/banner.jpg" alt>
 						</div>
 					</div>
 					<!-- POST ACTIONS -->

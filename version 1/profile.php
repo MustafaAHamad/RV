@@ -11,11 +11,13 @@
 </head>
 <body>
 	<div id="akFJ40vR">
-		<div class="jGh4C3iW">
-			<div class="irJk78cf">
+		<div class="profile-container">
+			<div class="header-container">
 				<div class="profile-wrapper">
-					<div class="avatar-wrapper">
-						<img src="client/img/whodis.png" class="avatar-img">
+					<div class="banner-container">
+						<div class="avatar-wrapper">
+							<img src="client/img/whodis.png" class="avatar-img">
+						</div>
 					</div>
 					<div class="option-wrapper">
 						<!-- <a>

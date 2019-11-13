@@ -64,10 +64,18 @@
 							<p>SKRRRT BrRRT sKRt SKKRT</p>
 						</div>
 						<div class="post-actions">
-							<i class="fas fa-comment-dots"></i>
-							<i class="fas fa-heart"></i>
-							<i class="fas fa-retweet"></i>
-							<i class="fas fa-ellipsis-h"></i>
+							<button>
+								<i class="fas fa-comment-dots"></i>
+							</button>
+							<button>
+								<i class="fas fa-heart"></i>
+							</button>
+							<button>
+								<i class="fas fa-retweet"></i>
+							</button>
+							<button>
+								<i class="fas fa-ellipsis-h"></i>
+							</button>
 						</div>
 					</div>
 				</div>
@@ -85,10 +93,18 @@
 							<p>my EP dropping soon, it burned my studio tho</p>
 						</div>
 						<div class="post-actions">
-							<i class="fas fa-comment-dots"></i>
-							<i class="fas fa-heart like-active"></i>
-							<i class="fas fa-retweet"></i>
-							<i class="fas fa-ellipsis-h"></i>
+							<button>
+								<i class="fas fa-comment-dots"></i>
+							</button>
+							<button>
+								<i class="fas fa-heart"></i>
+							</button>
+							<button>
+								<i class="fas fa-retweet"></i>
+							</button>
+							<button>
+								<i class="fas fa-ellipsis-h"></i>
+							</button>
 						</div>
 					</div>
 				</div>
@@ -106,10 +122,18 @@
 							<p>😳😳😳</p>
 						</div>
 						<div class="post-actions">
-							<i class="fas fa-comment-dots"></i>
-							<i class="fas fa-heart"></i>
-							<i class="fas fa-retweet"></i>
-							<i class="fas fa-ellipsis-h"></i>
+							<button>
+								<i class="fas fa-comment-dots"></i>
+							</button>
+							<button>
+								<i class="fas fa-heart"></i>
+							</button>
+							<button>
+								<i class="fas fa-retweet"></i>
+							</button>
+							<button>
+								<i class="fas fa-ellipsis-h"></i>
+							</button>
 						</div>
 					</div>
 				</div>
@@ -130,10 +154,18 @@
 							</div>
 						</div>
 						<div class="post-actions">
-							<i class="fas fa-comment-dots"></i>
-							<i class="fas fa-heart"></i>
-							<i class="fas fa-retweet"></i>
-							<i class="fas fa-ellipsis-h"></i>
+							<button>
+								<i class="fas fa-comment-dots"></i>
+							</button>
+							<button>
+								<i class="fas fa-heart"></i>
+							</button>
+							<button>
+								<i class="fas fa-retweet"></i>
+							</button>
+							<button>
+								<i class="fas fa-ellipsis-h"></i>
+							</button>
 						</div>
 					</div>
 				</div>

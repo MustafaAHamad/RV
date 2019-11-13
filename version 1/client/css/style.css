@@ -317,7 +317,8 @@ div.feed-container {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	margin: 10px 0px;
+	margin: 10px 0px 0px;
+	margin-bottom: 10px;
 }
 
 div.feed-container div.post-container {
@@ -390,6 +391,14 @@ div.feed-container div.post-container div.content-container div.post-context div
 	height: 100%;
 	border-radius: 10px;
 	background: var(--darktheme-dark);
+}
+
+div.feed-container div.post-container div.content-container div.post-actions button {
+	background: none;
+	border: none;
+	outline: none;
+	padding: 0px 1px;
+	margin: 0px;
 }
 
 div.feed-container div.post-container div.content-container div.post-actions i {

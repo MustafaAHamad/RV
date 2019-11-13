@@ -10,8 +10,8 @@
 	<title>RV - Login or Signup</title>
 </head>
 <body>
-	<!-- CONTENT CONTAINER -->
 	<div id="vkR93ckBu">
+
 		<div class="iC5oVne1l">
 
 			<div class="vjR8cBnqiy">
@@ -29,7 +29,6 @@
 							<img class="vkrhjEi8p" src="client/img/banner.jpg" alt>
 						</div>
 					</div>
-					<!-- POST ACTIONS -->
 					<div class="qC0liByGe"></div>
 				</div>
 			</div>

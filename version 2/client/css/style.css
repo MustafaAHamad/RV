@@ -42,31 +42,70 @@ li {
 	list-style-type: none;
 }
 
+.hidden {
+	display: none !important;
+}
+
 input[type=text],
 input[type=password],
 input[type=email] {
 	box-sizing: border-box;
 }
 
+.viuPo4i {
+	max-width: 100% !important;
+	overflow: hidden !important;
+	text-overflow: ellipsis !important;
+	white-space: nowrap !important;
+	word-wrap: normal !important;
+}
+
 .gjRu98C {
 	text-align: center !important;
 }
 
-/* ACCOUNT */
+/* INDEX PAGE */
+
+.iR8ve4w {
+	display: flex;
+	margin: 10px 0px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.mGi3aD9 {
+	width: 100%;
+	padding: 10px;
+}
+
+.vRihj5f {
+	min-height: 55px;
+	margin-left: 3.5rem;
+}
+
+.miHu7kL {
+	display: flex;
+}
+
+/* PROFILE PAGE */
+
+
+
+/* ACCOUNT PAGE */
 
 .jGyv6e1 {
 	width: 370px;
-	min-height: 480px;
+	/* min-height: 480px; */
 	margin: 60px auto 0;
 	background: #ffffff;
-	border-radius: 4px;
-	/* box-shadow: 0 10px 25px rgba(0,0,0,0.05), 0 20px 48px rgba(0,0,0,0.05), 0 1px 4px rgba(0,0,0,0.1); */
-	border: 1px solid #ececec;
+	/* border-radius: 4px; */
+	box-shadow: 0 10px 25px rgba(0,0,0,0.05), 0 20px 48px rgba(0,0,0,0.05), 0 1px 4px rgba(0,0,0,0.1);
+	/* border: 1px solid #ececec; */
 	overflow: hidden;
 }
 
 .jGyv6e1 .gjCm3au {
-    padding: 60px 40px;
+    padding: 50px 40px;
 }
 
 .jGyv6e1 .kGmu2pl {
@@ -74,7 +113,6 @@ input[type=email] {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background: #ffffff;
 }
 
 .jGyv6e1 .pJv7beW {
@@ -89,18 +127,6 @@ input[type=email] {
 	font-weight: bold;
 	font-size: 13px;
 	pointer-events: none;
-}
-
-.jGyv6e1 .mf7iQve::after {
-	content: "";
-	width: 0%;
-	height: 1px;
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: -1px;
-	border-bottom: 1px solid #5fa8d3;
-	transition: width 0.3s ease;
 }
 
 .jGyv6e1 .kJgRy92 {
@@ -129,7 +155,7 @@ input[type=email] {
 .jGyv6e1 .jGiVx8a {
 	margin: 10px 0;
 	padding: 10px 40px;
-	background-color: #4abcff;
+	background-color: #5fa8d3;
 	border: none;
 	border-radius: 3px;
 	color: #ffffff;
@@ -145,4 +171,8 @@ input[type=email] {
 	margin: 7px 0 0;
 	color: #6a737c;
 	font-size: 12px;
+}
+
+.jGyv6e1 .Vjru7i2 {
+	margin: 7px 0;
 }

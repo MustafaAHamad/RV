@@ -1,15 +1,25 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<html lang="eng">
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-	<title>Website</title>
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="client/css/style.css?v=<?php echo time();?>">
-</head>
+<?php
+	require("_includes/header.php");
+?>
 <body>
-	
+	<div id="mvFiGh3">
+		<div class="iR8ve4w">
+			<!-- POST CONTAINER -->
+			<div class="mGi3aD9">
+				<!-- POST HEADER -->
+				<div class="vRihj5f">
+					<div class="miHu7kL">
+						<a>
+							<img src="client/img/whodis.png" />
+							<span class="viuPo4i">Mustafa Abu Hamad</span>
+						</a>
+					</div>
+				</div>
+				<!-- POST CONTENT -->
+
+				<!-- POST ACTIONS -->
+			</div>
+		</div>
+	</div>
 </body>
 </html>

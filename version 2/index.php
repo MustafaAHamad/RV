@@ -1,24 +1,25 @@
 <?php
+	
+	require("server/database.php");
+
 	require("_includes/header.php");
 ?>
 <body>
+	
 	<div id="mvFiGh3">
-		<div class="iR8ve4w">
-			<!-- POST CONTAINER -->
-			<div class="mGi3aD9">
-				<!-- POST HEADER -->
-				<div class="vRihj5f">
-					<div class="miHu7kL">
-						<a>
-							<img src="client/img/whodis.png" />
-							<span class="viuPo4i">Mustafa Abu Hamad</span>
-						</a>
-					</div>
-				</div>
-				<!-- POST CONTENT -->
-
-				<!-- POST ACTIONS -->
-			</div>
+		<nav class="iR8ve4w">
+			<header class="iR7mHw2">
+				
+			</header>
+		</nav>
+		<div id="uE7cQp9">
+			<?php
+				if ($user) {
+					echo '<form action="server/logout.php" method="POST">
+							<button type="submit" class="text_content logout" name="logout">LOGOUT</button>
+						</form>';
+				}
+			?>
 		</div>
 	</div>
 </body>

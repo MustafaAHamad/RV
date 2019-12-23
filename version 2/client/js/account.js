@@ -1,42 +1,97 @@
-var defaultBorder = "1px solid #e0e7ec";
-var errorBorder = "1px solid red";
+var defaultBorder = '#e0e7ec';
+var errorBorder = 'var(--error-color)';
 
-function checkField(fieldId) {
+function checkField(fieldId){
 	var fieldNode = document.getElementById(fieldId);
-	if (fieldNode.value == "") {
-		fieldNode.style.border = errorBorder;
+	
+	if (fieldNode.value == '') {
+		fieldNode.classList.add('ivRmJ82');
 		return false;
 	} else {
-		fieldNode.style.border = defaultBorder;
+		fieldNode.classList.remove('ivRmJ82');
 		return fieldNode.value;
-	}
+	};
 }
 
-function checkForm(fields) {
+function checkForm(query, fields){
 	var success = true;
 	var request = {};
 
-	for (var i = 0; 1 < fields.length; i++) {
-		var fieldName = fields[i]
+	for(var i=0; i < fields.length; i++){
+		var slot = query[i];
+		var fieldName = fields[i];
 		var fieldValue = checkField(fieldName);
-		request[fieldName] = fieldValue;
-		if (!fieldValue) success = false;
+		request[slot] = fieldValue;
+		if(!fieldValue) success = false;
 	}
-
 	return (success) ? request : false;
 }
 
-function validate(type) {
-	if (type == "signup") {}
+function validateLogIn() {
+	var request = checkForm(['email', 'password'], ['vRu4eTd', 'mGhuC2i']);
+	if (!request) return false;
 
-	if (type == "login") {
-		var request = checkForm(['vRu4eTd', 'mGhuC2i']);
-		if (!request) return false;
-
-		var successHandler = function() {
-			window.location.assign("index.php");
-			window.location = "index.php";
-			alert('you logged in!');
-		}
+	var successHandler = function() {
+		window.location.assign("index.php");
+		window.location = "index.php";
 	}
+
+	submitDataToServer("login", request, successHandler);
+	return false;
+}
+
+function validateSignUp() {
+	var request = checkForm(['username', 'email', 'password'], ['uIrc50C', 'hF8uwEi', 'uR8cKm7']);
+	if (!request) return false;
+
+	if (request.password.length < 6) {
+		document.getElementById('uR8cKm7').classList.add('ivRmJ82');
+		return false;
+	} else {
+		document.getElementById('uR8cKm7').classList.remove('ivRmJ82');
+	}
+
+	var successHandler = function(){
+		window.location.assign("index.php");
+		window.location = "index.php";
+	}
+
+	submitDataToServer("signup", request, successHandler);
+	return false;
+}
+
+function submitDataToServer(action, apiPayLoad, successHandler) {
+	var apiRequest = {
+		action : action,
+		request_payload: apiPayLoad,
+	};
+
+	$.ajax({
+		url: '',
+		type: 'POST',
+		contentType:'application/json',
+		data: JSON.stringify(apiRequest),
+		dataType:'json',
+
+		success: function(data) {
+			console.log(data);
+			if (data.status == "Error") {
+				alert('uh ohh!');
+			}
+
+			if (data.status == "Success!") {
+				successHandler(data);
+			}
+		},
+
+		error: function(xhr, ajaxOptions, thrownError) {
+			if (xhr.status == 200) {
+		    	alert(ajaxOptions);
+			}
+			else {
+		    	alert(xhr.status);
+		    	alert(thrownError);
+			}
+		},
+	});
 }

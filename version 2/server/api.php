@@ -6,7 +6,7 @@
 
 	function errorHandler($message) {
 		$response = array(
-			'status' => 'error',
+			'status' => 'Error',
 			'message' => $message,
 		);
 
@@ -48,14 +48,14 @@
 					errorHandler('SERVER | Illegal username characters');
 				};
 
-				$sqlEmail = "SELECT * FROM user WHERE email = '$email'";
+				$sqlEmail = "SELECT * FROM users WHERE email = '$email'";
 				$resultEmail = mysqli_query($db, $sqlEmail);
 				$resultEmailCheck = mysqli_num_rows($resultEmail);
 				if ($resultEmailCheck) {
 					errorHandler('SEVRER | The email provided is already taken.');
 				};
 
-				$sqlUsername = "SELECT * FROM user WHERE username = '$username'";
+				$sqlUsername = "SELECT * FROM users WHERE username = '$username'";
 				$resultUsername = mysqli_query($db, $sqlUsername);
 				$resultUsernameCheck = mysqli_num_rows($resultUsername);
 				if ($resultUsernameCheck) {
@@ -64,7 +64,7 @@
 
 				$hashedpwd = md5($password);
 
-				$sql = "INSERT INTO user (email, username, password, icon) VALUES ('$email', '$username', '$hashedpwd', 1)";
+				$sql = "INSERT INTO users (email, username, password, icon) VALUES ('$email', '$username', '$hashedpwd', 1)";
 				mysqli_query($db, $sql);
 				$newUserId = mysqli_insert_id($db);
 
@@ -74,7 +74,7 @@
 					errorHandler($error);
 				};
 
-				$sql = "SELECT * FROM user WHERE email = '$email'";
+				$sql = "SELECT * FROM users WHERE email = '$email'";
 				$result = mysqli_query($db, $sql);
 				$resultCheck = mysqli_num_rows($result);
 
@@ -103,7 +103,7 @@
 					errorHandler('SERVER | Email requested is invalid');
 				};
 
-				$sql = "SELECT * FROM user WHERE email = '$email'";
+				$sql = "SELECT * FROM users WHERE email = '$email'";
 				$result = mysqli_query($db, $sql);
 				$resultCheck = mysqli_num_rows($result);
 				if (!$resultCheck) {
@@ -130,9 +130,18 @@
 			break;
 
 			case 'update icon':
+				$fields = array("file");
+				foreach ($fields as $field) {
+					if (!isset($payload[$field]) || $payload[$field] == '') {
+						errorHandler('SERVER | Missing field ' . $field);
+					};
+				};
+
+				extract($payload);
+
 				$id = $user['id'];
 
-				$file = $_FILES['file'];
+				// errorHandler($file);
 
 				$fileName = $file['name'];
 				$fileTmpName = $file['tmp_name'];
@@ -149,11 +158,14 @@
 					if ($fileError === 0) {
 						if ($fileSize < 1000000) {
 							$fileNameNew = 'profile'.$id. '.'.$fileActualExt;
-							$fileDestination = 'client/img/icon/'.$fileNameNew;
-							move_uploaded_file($fileNameNew, $fileDestination);
-							$sql = "UPDATE user SET icon = 0 WHERE id = '$id'";
+							$fileDestination = '../client/img/icon/'.$fileNameNew;
+							move_uploaded_file($fileTmpName, $fileDestination);
+							$sql = "UPDATE users SET icon = '$fileNameNew' WHERE id = '$id'";
 							$result = mysqli_query($db, $sql);
-							header("Location: account.php?uploadsuccess");
+							$response = array(
+								"status" => "Success!",
+								"insert_id" => $newUserId,
+							);
 						};
 					};
 				};

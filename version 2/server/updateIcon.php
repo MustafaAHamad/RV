@@ -23,9 +23,9 @@
 					$fileNameNew = 'profile'.$id. '.'.$fileActualExt;
 					$fileDestination = '../client/img/icon/'.$fileNameNew;
 					move_uploaded_file($fileTmpName, $fileDestination);
-					$sql = "UPDATE user SET icon = '$fileNameNew' WHERE id = '$id'";
+					$sql = "UPDATE users SET icon = '$fileNameNew' WHERE id = '$id'";
 					$result = mysqli_query($db, $sql);
-					header("Location: ../account.php?uploadsuccess");
+					header("Location: ../account.php?uploadsuccess?" . $file);
 					exit();
 				}
 			}

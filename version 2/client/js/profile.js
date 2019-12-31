@@ -1,7 +1,6 @@
-
 function updateProfilePicture() {
-	var request = document.getElementById('ciFp0r7');
-	const file = request.files[0];
+	var req = document.getElementById('ciFp0r7');
+	const file = req.files[0];
 	const fileType = file['type'];
 	const validImageTypes = ['image/jpg', 'image/jpeg', 'image/png'];
 	if (!validImageTypes.includes(fileType)) {
@@ -11,9 +10,15 @@ function updateProfilePicture() {
 		var successHandler = function() {
 			window.location.assign("index.php");
 			window.location = "index.php";
-		}
+		};
 
-		submitDataToServer("update icon", file, successHandler);
+		var request = {};
+
+		request['file'] = req.value;
+
+		alert(req.value['type']);
+
+		submitDataToServer("update icon", request, successHandler);
 	}
 	return false;
 }

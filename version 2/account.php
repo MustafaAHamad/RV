@@ -18,7 +18,6 @@
 			echo '<form action="server/logout.php" method="POST">
 					<button type="submit" class="text_content logout" name="logout">LOGOUT</button>
 				  </form>
-				  <h3>you have logged in!</h3>
 				  <h4> user id: ' . $user['id'] . '</h4>
 				  <h4> username: ' . $user['username'] . '</h4>
 				  <h4> user icon: ' . $user['icon'] . '</h4>

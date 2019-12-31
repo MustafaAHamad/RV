@@ -17,7 +17,7 @@ function checkForm(query, fields){
 	var success = true;
 	var request = {};
 
-	for(var i=0; i < fields.length; i++){
+	for(var i = 0; i < fields.length; i++){
 		var slot = query[i];
 		var fieldName = fields[i];
 		var fieldValue = checkField(fieldName);
@@ -32,8 +32,8 @@ function validateLogIn() {
 	if (!request) return false;
 
 	var successHandler = function() {
-		window.location.assign("index.php");
-		window.location = "index.php";
+		window.location.assign("home");
+		window.location = "home";
 	}
 
 	submitDataToServer("login", request, successHandler);

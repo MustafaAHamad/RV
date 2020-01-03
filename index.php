@@ -20,7 +20,7 @@
 	<div id="mvFiGh3">
 		<!-- HEADER CONTAINER -->
 		<div class="vKp03cA">
-			<div class="iMpr2ll">
+			<div class="iMpr2ll iRmc8qE">
 				<ul class="ivFm7Rt">
 					<li class="jFm9oAv">
 						<a class="cFje9e3" href="">
@@ -44,7 +44,7 @@
 			</div>
 		</div>
 		<!-- SIDEBAR CONTAINER -->
-		<div class="vmFu8i3">
+		<div class="vmFu8i3 hidden">
 			<nav class="iR8ve4w">
 				<ul class="iR7mHw2">
 					<li class="mgR8Ucw">

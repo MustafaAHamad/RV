@@ -11,10 +11,10 @@
 		session_destroy();
 
 		// REDIRECT TO HOME
-		header("Location: ../account.php");
+		header("Location: ../account");
 		exit();
 	}else{
-		header("Location: ../account.php");
+		header("Location: ../account");
 		exit();
 	};
 ?>

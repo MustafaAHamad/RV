@@ -79,11 +79,11 @@ function submitDataToServer(action, apiPayLoad, successHandler) {
 
 		success: function(data) {
 			console.log(data);
-			if (data.status == "Error") {
+			if (data.status == "error") {
 				alert('uh ohh!');
 			}
 
-			if (data.status == "Success!") {
+			if (data.status == "success") {
 				successHandler(data);
 			}
 		},

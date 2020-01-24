@@ -6,7 +6,7 @@
 
 	function errorHandler($message) {
 		$response = array(
-			'status' => 'Error',
+			'status' => 'error',
 			'message' => $message,
 		);
 
@@ -92,7 +92,7 @@
 				if($user = mysqli_fetch_assoc($result)){
 					$_SESSION['user'] = $user;
 					$response = array(
-						"status" => "Success!",
+						"status" => "success",
 						"insert_id" => $newUserId,
 					);
 				};
@@ -132,7 +132,7 @@
 					if ($user['password'] != $hashedpassword) errorHandler('SERVER | The password provided was incorrect.');
 					$_SESSION['user'] = $user;
 					$response = array(
-						"status" => "Success!",
+						"status" => "success",
 						"message" => "Your session has been set on the server.",
 						"user" => $user
 					);
@@ -144,7 +144,7 @@
 				session_unset();
 				session_destroy();
 
-				$response['status'] = "Sucess!";
+				$response['status'] = "sucess";
 				break;
 			case 'reset password':
 				# VALIDATE EMAIL FIELD
@@ -180,7 +180,7 @@
 			case 'update profile picture':
 				if ($user) {
 					$id = $user['id'];
-					
+
 				};
 				break;
 			default:

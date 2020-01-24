@@ -1,6 +1,10 @@
 var defaultBorder = '#e0e7ec';
 var errorBorder = 'var(--error-color)';
 
+function viewResetPassword(){
+	return
+}
+
 function checkField(fieldId){
 	var fieldNode = document.getElementById(fieldId);
 	
@@ -63,7 +67,7 @@ function validateSignUp() {
 function submitDataToServer(action, apiPayLoad, successHandler) {
 	var apiRequest = {
 		action : action,
-		request_payload: apiPayLoad,
+		payload: apiPayLoad,
 	};
 
 	$.ajax({

@@ -27,8 +27,6 @@
 							</li>
 						';
 					};
-				} else {
-					echo "logged out";
 				};
 			?>
 		</ul>

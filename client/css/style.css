@@ -8,6 +8,7 @@ html:not(.style-scope) {
 html:not(.style-scope) {
 	--divider-color: #dbdbdb;
 	--error-color: #dd2c00;
+	--temp-color: #f7f7ff;
 }
 
 body {
@@ -81,7 +82,7 @@ input[type=email] {
 	top: 0;
 	left: 0px;
 	background-color: var(--primary-background-color);
-	border-right: 1px solid #d9d7ff;
+	border-right: 0.275px solid #f2f2f2;
 	z-index: 100;
 }
 
@@ -90,7 +91,7 @@ input[type=email] {
 	position: relative;
 	margin: 0 0 1px;
 	padding: 20px;
-	color: #d9d7ff;
+	color: #e0e7ec;
 	font-size: 1.25rem;
 	white-space: nowrap;
 }
@@ -105,10 +106,10 @@ input[type=email] {
 	position: absolute;
 	width: 5px;
 	height: 100%;
-	top: 0px;
-	right: 0px;
+	top: 0;
+	left: 0;
 	background: #5fa8d3;
-	border-radius: 50px 0 0 50px;
+	border-radius: 0 50px 50px 0;
 }
 
 .vmFu8i3 .uRyM6b1 {
@@ -122,7 +123,15 @@ input[type=email] {
 /* INDEX PAGE */
 
 #uE7cQp9 {
-	margin-left: 100px;
+	margin-left: 80px;
+	padding-left: 20px;
+}
+
+.hGy5kEw {
+	min-height: 0 !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	background-color: transparent !important;
 }
 
 .mGi3aD9 {
@@ -294,25 +303,35 @@ input[type=email] {
 }
 
 .jGm9Opw2 .yTm7EgW {
-
-margin: 0 10px 0 0;
-
-padding: 5px 10px;
-
-background: none;
-
-border: none;
-
-cursor: pointer;
-
-outline: none;
+	margin: 0 10px 0 0;
+	padding: 5px 10px;
+	background: none;
+	border: none;
+	cursor: pointer;
+	outline: none;
 }
 
 .jGm9Opw2 .lKj8ewR {
+	font-size: 1rem;
+	color: #ccd4da;
+}
 
-font-size: 1rem;
+.jGm9Opw2 .uEcwq2i {
+	display: inline-block;
+	margin-right: 10px;
+}
 
-color: #ccd4da;
+.jGm9Opw2 .iTrB5z4 {
+	padding: 5px 0px;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.jGm9Opw2 .oWbX9e3 {
+	color: #ccd4da;
+	font-size: 0.8rem;
 }
 
 /* PROFILE PAGE */

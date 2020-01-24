@@ -19,7 +19,7 @@
 			// REQUIRE HEADER
 			require('_includes/header.php');
 		?>
-		<div id="uE7cQp9">
+		<div id="uE7cQp9" class="hGy5kEw">
 			<?php
 				if ($user) {
 					echo '
@@ -58,9 +58,9 @@
 											<label for="password" class="mf7iQve">Password</label>
 											<input id="mGhuC2i" class="vJF8Muc" type="password" name="password" autocomplete="off">
 										</div>
-										<button class="vk9Muy3">Forgot your password?</button>
-										<button class="jGiVx8a" type="submit" name="login">Sign in</button>
+										<button class="vk9Muy3" onclick="viewResetPassword();">Forgot your password?</button>
 										<span class="mGkiY7C">By signing, you agree to our Terms of Service and Privacy Policy.</span>
+										<button id="vXzt7oi" class="jGiVx8a" type="submit" name="login">Sign in</button>
 									</form>
 								</div>
 							</div>
